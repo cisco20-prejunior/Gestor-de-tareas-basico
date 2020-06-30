@@ -19,6 +19,7 @@ function saveTask(e) {
 		localStorage.setItem("tareas", JSON.stringify(tareas));
 	}
 	getTask();
+	document.getElementById("carta").reset();
 	e.preventDefault();
 }
 function getTask() {
