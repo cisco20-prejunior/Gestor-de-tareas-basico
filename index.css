@@ -1,0 +1,30 @@
+li {
+	display: inline-block;
+	width: 30%;
+	margin: auto;
+}
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "carta tareas tareas";
+}
+#carta {
+	display: flex;
+	flex-flow: column wrap;
+	width: 50%;
+	margin: auto;
+	padding-top: 2em;
+	grid-area: carta;
+}
+#tareas {
+	grid-area: tareas;
+}
+#contenido {
+	resize: none;
+}
+#tarea {
+	border: 1px black;
+	background-color: rgb(229, 229, 229);
+	width: 80%;
+	margin: auto;
+}
